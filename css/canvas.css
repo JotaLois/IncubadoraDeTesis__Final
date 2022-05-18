@@ -29,6 +29,7 @@ body {
     width: 100%;
     height: 100px;
 }
+
 .navbar-brand{
     height: auto;
     width: 10%;
@@ -66,11 +67,19 @@ body {
 .navbar-collapse{
     text-align: center;
     width: 100%;
+    
+    
+    
+    
 }
+
 .navbar-nav{
     width: 90%;
     margin-left: 0px;
     margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .nav-item{
     margin-left: 15px;
@@ -177,7 +186,7 @@ body {
     
 }
 
-.cuerpoCanvas h1 {
+.cuerpoCanvas .encabezado h1 {
     text-align: center;
     margin: 1rem 3rem 1rem 3rem;
     font-family: 'Montserrat', sans-serif;
@@ -191,17 +200,23 @@ body {
     
 }
 
-.cuerpoCanvas .fondoH1 {
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+.cuerpoCanvas .encabezado .fondoH1 {
     background-image: url(../assets/images/fondo4.png);
     background-size: cover;
     width: 100%;
     
 }
 
-.divisorNorte {
+.encabezado .divisorNorte {
     width: 100%;
 }
-.divisorSur{
+.encabezado .divisorSur{
     width: 100%;
 }
 
@@ -519,7 +534,9 @@ strong {
 .baseCanvas .card {
     background-color: #c0ddfc;
     text-align: center;
-    font-family: 'Montserrat', sans-serif; ;
+    font-family: 'Montserrat', sans-serif; 
+    width: 625px;
+    height: auto;
 }
 
 .baseCanvas textarea:hover {
@@ -607,6 +624,11 @@ strong {
     backface-visibility: hidden;
     
     
+}
+
+.foda .card{
+    width: 260px;
+
 }
 /*Imagenes__foda*/
 
@@ -1157,7 +1179,8 @@ strong {
     }
 
 .navbar .container {
-    margin-top: 1rem;
+    position: relative;
+    z-index:1;
 }
 
     .canvasContainer textarea {
@@ -1295,9 +1318,10 @@ strong {
         }
 
         .baseCanvas .btn:hover{
-            background-color: aqua;
+            background-color: rgb(164, 101, 247);
             transform: scale(1.5);
             transition:0.25s;
+        
         }
 
         .baseCanvas .subtitulosCanvas {
@@ -1307,7 +1331,8 @@ strong {
         .baseCanvas .card {
             background-color: #c0ddfc;
             text-align: center;
-            font-family: 'Montserrat', sans-serif; ;
+            font-family: 'Montserrat', sans-serif; 
+            width: 80vw;
         }
 
 /*FODA*/
