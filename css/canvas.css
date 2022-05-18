@@ -1180,7 +1180,7 @@ strong {
 
 .navbar .container {
     position: relative;
-    z-index:1;
+    z-index:1 !important;
 }
 
     .canvasContainer textarea {
